@@ -1,8 +1,7 @@
 package PktActividad8;
 
 public class ClsNota {
-	 public int MtdPromedio(int notaParcial1, int notaParcial2, int notaParcial3, int notaLaboratorio1, int notaLaboratorio2, int notaLaboratorio3, int notaSemestral)
-	    {
+	 public int MtdPromedio(int notaParcial1, int notaParcial2, int notaParcial3, int notaLaboratorio1, int notaLaboratorio2, int notaLaboratorio3, int notaSemestral)  {
 	        float porcentajeParciales = (notaParcial1+notaParcial2+notaParcial3)*30/300;
 	        float porcentajeLaboratorios = (notaLaboratorio1+notaLaboratorio2+notaLaboratorio3)*35/300;
 	        float porcentajeSemestral = (float) (notaSemestral*0.35);
@@ -11,8 +10,7 @@ public class ClsNota {
 	        return sumaPorcentajes;
 	    }
 
-	    public static char MtdNota(int porcentajeTotal)
-	    {
+	    public static char MtdNota(int porcentajeTotal) {
 	        if (porcentajeTotal<=60)
 	            return 'F';
 	        else
@@ -33,4 +31,5 @@ public class ClsNota {
 	            }
 	        }
 	    }
+	   
 	}
